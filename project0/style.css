@@ -1,0 +1,147 @@
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+
+}
+
+div {
+    display: block;
+}
+
+#logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    background-image: linear-gradient(to right,
+        rgb(0, 81, 255) 22%,
+        rgb(223, 32, 32) 22% 40%,
+        rgb(230, 154, 14) 40% 58%,
+        rgb(0, 81, 255) 58% 75%,
+        rgb(47, 189, 11) 75% 83%,
+        rgb(223, 32, 32) 83%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#logo-sub {
+    position: relative;
+    top: 15px;
+    margin-left: -5%;
+    color: rgb(0, 81, 255);
+}
+
+#wrapper {
+    width: 50%;
+    margin: auto;
+}
+
+#adv-wrapper #header {
+    width: 50%;
+    margin: auto;
+    text-align: right;
+}
+
+#adv-wrapper {
+}
+
+#header {
+    text-align: right;
+}
+#header a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+#header a:hover {
+    text-decoration: underline;
+}
+
+#search {
+    margin-top: 30%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#searchbar {
+    color: rgb(105, 105, 105);
+    border:rgb(128, 128, 128) solid 1px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    display: block;
+    width: 60%;
+    height: 30px;
+    margin: 10px 0;
+    margin-left: 20%;
+    padding-top: 5px;
+    line-height: normal;
+}
+
+#advanced{
+    width: 70%;
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.753);
+    vertical-align: middle;
+}
+
+#advanced div{
+    margin: 1em 0;
+}
+
+#advanced .label{
+    display: inline-block;
+    width: 15%;
+}
+
+#advanced .input{
+    display: inline-block;
+    width: 50%;
+}
+
+#advanced .description{
+    display: inline-block;
+    width: 25%;
+}
+
+#searchbar:hover {
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+#searchbar:focus {
+    border: none;
+    border:rgb(128, 128, 128) solid 1px;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+#searchbar input{
+    width: 80%;
+    height: 100%;
+    font-size: 1em;
+    color: grey;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.googlebutton {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border:rgb(228, 228, 228) 1px solid;
+}
+.button-adv {
+    text-align: right;
+}
+
+.button-adv button{
+    margin: 0;
+    background-color: rgb(0, 81, 255);
+    color: white;
+}

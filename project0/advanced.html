@@ -1,0 +1,62 @@
+<!-- link to image and advanced
+
+search
+button: google search
+button: im feeling lucky -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>google, the one, the only</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="adv-wrapper">
+        <div id="header">
+            <a href="index.html">< back</a>
+        </div>
+        <div id="advanced">
+            <h1>advanced search:</h1>
+            <form action="https://www.google.com/search">
+                <div>
+                    <label class="label" for="1">Find pages with ...</label>
+                    <span class="rien"></span>
+                    <span class="description">
+                    </span>
+                </div>
+                <div>
+                    <label class="label" for="1">all these words:</label>
+                    <input name="as_q" class="input" type="text" />
+                    <span class="description">Type the important words: tri-colour rat terrier</span>
+                </div>
+                <div>
+                    <label class="label" for="2">this exact word or phrase:</label>
+                    <input name="as_epq" class="input" type="text" />
+                    <span class="description">Put exact words in quotes</span>
+                </div>
+                <div>
+                    <label class="label" for="3">any of these words:</label>
+                    <input name="as_oq" class="input" type="text" />
+                    <span class="description">type OR between all the words you want</span>
+                </div>
+                <div>
+                    <label class="label" for="4">none of these words:</label>
+                    <input name="as_eq" class="input" id="4"type="text" />
+                    <span class="description">Put a minus sign just before words that you don't want</span>
+                </div>
+                <div>
+                    <span class="label"></span>
+                    <span class="input button-adv">
+                        <button class="googlebutton button-adv" type="submit" value="Search image">advanced search</button>
+                    </span>
+                    <span class="description">
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
