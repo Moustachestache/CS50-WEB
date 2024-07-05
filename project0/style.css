@@ -1,3 +1,20 @@
+@media (min-width: 600px) {
+    body {
+        width: 600px;
+    }
+    #searchbar input{
+        width: 75%;
+    }
+}
+
+@media (max-width: 599px) {
+    body {
+        width: 100%;
+    }
+    #searchbar input{
+        width: 80%;
+    }
+}
 
 html {
     height: 100%;
@@ -8,7 +25,8 @@ html {
 }
 
 body {
-
+    margin: 0 auto;
+    padding: 0;
 }
 
 div {
@@ -35,12 +53,11 @@ div {
 #logo-sub {
     position: relative;
     top: 15px;
-    margin-left: -5%;
+    left: -25px;
     color: rgb(0, 81, 255);
 }
 
 #wrapper {
-    width: 50%;
     margin: auto;
 }
 
@@ -62,26 +79,6 @@ div {
 }
 #header a:hover {
     text-decoration: underline;
-}
-
-#search {
-    margin-top: 30%;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#searchbar {
-    color: rgb(105, 105, 105);
-    border:rgb(128, 128, 128) solid 1px;
-    border-radius: 20px;
-    font-size: 1.5em;
-    display: block;
-    width: 60%;
-    height: 30px;
-    margin: 10px 0;
-    margin-left: 20%;
-    padding-top: 5px;
-    line-height: normal;
 }
 
 #advanced{
@@ -110,6 +107,40 @@ div {
     width: 25%;
 }
 
+#search {
+    margin: 2em auto;
+    text-align: center;
+}
+
+#searchbar {
+    color: rgb(105, 105, 105);
+    border:rgb(128, 128, 128) solid 1px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    margin: 1em 0;
+    display: block;
+    line-height: normal;
+}
+
+#searchbar > *{
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+#search a {
+}
+
+#search .item1 {
+    position: relative;
+    left: -5px;
+}
+
+#search .item2 {
+}
+
 #searchbar:hover {
     box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
 }
@@ -122,13 +153,16 @@ div {
 }
 
 #searchbar input{
-    width: 80%;
-    height: 100%;
+    width: 75%;
     font-size: 1em;
     color: grey;
     border: none;
     background-color: transparent;
     outline: none;
+    border-bottom: 8px solid transparent
+}
+
+#searchbar svg {
 }
 
 .googlebutton {
