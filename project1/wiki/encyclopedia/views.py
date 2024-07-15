@@ -15,8 +15,8 @@ def edit(request):
     name = request.GET["i"]
     data = utils.get_entry(name)
     if not name:
-        return Http404(request)
-    if data != None:
+        return render(request, "index.htm", {"entries": utils.list_entries})
+    if data:
         return render(request, "edit.htm", {
             "info": data, 
             "name" : name})
