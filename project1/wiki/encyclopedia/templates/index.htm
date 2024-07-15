@@ -1,0 +1,11 @@
+{% extends "base.htm" %}
+{% block headtitle %}index{% endblock %}
+{% block title %}index{% endblock %}
+{% block content %}
+    <h1>articles:</h1>
+    <ul>
+    {% for item in entries %}
+        <li><a href="{{item}}">{{item}}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

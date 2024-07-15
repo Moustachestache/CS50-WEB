@@ -1,0 +1,11 @@
+{% extends "base.htm" %}
+{% block headtitle %}Edit{% endblock %}
+{% block title %}editing article "{{ name }}"{% endblock %}
+{% block content %}
+    <form>
+        <div class="mb-3">
+            <textarea class="form-control" style="height: 400px">{{ info }}</textarea>
+        </div>
+        <button class="btn btn-primary" action="send">Commit</button>
+    </form>
+{% endblock %}

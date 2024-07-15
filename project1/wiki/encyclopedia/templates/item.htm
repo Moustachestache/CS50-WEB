@@ -1,0 +1,7 @@
+{% extends "base.htm" %}
+{% block headtitle %}index{% endblock %}
+{% block title %}index{% endblock %}
+{% block content %}
+    {{ info|safe }}
+    <a href="edit?i={{ name }}">edit "{{ name }}"</a>
+{% endblock %}
