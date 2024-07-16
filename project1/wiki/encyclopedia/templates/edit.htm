@@ -2,10 +2,12 @@
 {% block headtitle %}Edit{% endblock %}
 {% block title %}editing article "{{ name }}"{% endblock %}
 {% block content %}
-    <form>
+    <form method="POST" action="edit/send">
         <div class="mb-3">
-            <textarea class="form-control" style="height: 400px">{{ info }}</textarea>
+            <textarea class="form-control" style="height: 400px" name="data">{{ info }}</textarea>
         </div>
-        <button class="btn btn-primary" action="send">Commit</button>
+        <input type="hidden" name="name" value="{{ name }}"/>
+        {% csrf_token %}
+        <button class="btn btn-primary" action="send" taget="edit/send">Commit</button>
     </form>
 {% endblock %}

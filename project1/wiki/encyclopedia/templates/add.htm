@@ -1,0 +1,13 @@
+{% extends "base.htm" %}
+{% block headtitle %}Edit{% endblock %}
+{% block title %}adding article{% endblock %}
+{% block content %}
+    <form method="POST" action="edit/send">
+        <input class="form-control" type="text" name="name" value="title"/>
+        <div class="mb-3">
+            <textarea class="form-control" style="height: 400px" name="data">article</textarea>
+        </div>
+        {% csrf_token %}
+        <button class="btn btn-primary" action="send" target="edit/send">Commit</button>
+    </form>
+{% endblock %}

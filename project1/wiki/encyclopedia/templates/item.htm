@@ -1,6 +1,6 @@
 {% extends "base.htm" %}
-{% block headtitle %}index{% endblock %}
-{% block title %}index{% endblock %}
+{% block headtitle %}{{ name }}{% endblock %}
+{% block title %}{{ name }}{% endblock %}
 {% block content %}
     {{ info|safe }}
     <a href="edit?i={{ name }}">edit "{{ name }}"</a>
